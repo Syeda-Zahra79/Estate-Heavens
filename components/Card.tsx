@@ -15,7 +15,6 @@ export default  function Card({title, description} : cardProps) {
     <div className="shadow-gray-500 border-gray-200 border bg-white drop-shadow-xl w-[100%] p-8 mt-14 md:w-[25%] h-auto 
     // md:h-[300px]
     ">
-      <Link href={'/products'}>Look here</Link>
       <div className="h-[50px] w-[50px] mx-auto mb-3"> 
         <Image src={image} alt={title}className="w-[100%]" />
       </div>
