@@ -1,8 +1,6 @@
 
 
 
-
-
 export async function fetchData(location: string) {
   const url = `https://realtor16.p.rapidapi.com/forsale?location=${location}`;
   const options = {
