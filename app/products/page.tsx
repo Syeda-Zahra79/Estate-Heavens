@@ -19,9 +19,8 @@ export default function Products() {
 
   useEffect(() => {
     const fetchProperties = async () => {
-      const properties = await fetchData(
-        location == null ? "Santa Monica" : location
-      );
+      location = location == null ? "Santa Monica" : location
+      const properties = await fetchData(location);
       setData(properties);
     };
     fetchProperties();
