@@ -1,10 +1,10 @@
 "use client";
 import React, { useEffect, useState } from "react";
-import { fetchData } from "./../utils/page";
 import ProductCard from "../../components/ProductCard";
 import Search from "../../components/Search";
 import { useSearchParams } from "next/navigation";
 import { useRouter } from "next/navigation";
+import fetchData from "../utils/page";
 
 export default function Products() {
   const router = useRouter();

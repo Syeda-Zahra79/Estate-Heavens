@@ -21,3 +21,6 @@ export async function fetchData(location: string) {
     console.error(error);
   }
 }
+
+
+export default fetchData
