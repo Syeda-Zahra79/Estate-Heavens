@@ -1,3 +1,4 @@
+import { data } from "@/assets";
 
 
 
@@ -14,7 +15,11 @@ export async function fetchData(location: string) {
   try {
     const response = await fetch(url, options);
     const result = await response.json();
-    return result.home_search.results;
+    if (result.home_search.results.length < 0 || result.home_search.results == (undefined || null)) {
+      return data;
+    } else {
+      return result.home_search.results;
+    }
   } catch (error) {
     console.error(error);
   }
